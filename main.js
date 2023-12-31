@@ -47,6 +47,7 @@ function validateGuess(guess){
 function checkGuess(guess){
      if(guess === randomNumber){
         displayMessage(`Congratulations!, you guessed it right`)
+        endGame()
      }
      else if(guess>randomNumber){
         displayMessage(`Number is too high`)
